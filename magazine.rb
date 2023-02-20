@@ -34,6 +34,16 @@ class Magazine
     @@all
   end
 
+  # Returns the magazine's articles
+  def articles
+    Article.all.select {|article| article.magazine == self}
+  end
+
+  # Returns the magazine's contributors
+  def contributors
+    self.articles.map {|article| article.author}
+  end
+
   # Returns an array of all Magazine instances
   def self.all
     @@all
