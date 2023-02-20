@@ -1,10 +1,6 @@
 require_relative './author.rb'
 require_relative './magazine.rb'
 
-magazine_author = Author.new("Jane Doe")
-
-puts "author in article.rb: #{magazine_author.name}"
-
 
 class Article
   # Article#initialize(author, magazine, title)

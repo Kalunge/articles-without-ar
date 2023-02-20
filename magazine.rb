@@ -48,6 +48,18 @@ class Magazine
   def self.all
     @@all
   end
+
+  def find_by_name(name)
+    self.all.select {|magazine| magazine.name == name}
+  end
+
+  def article_titles
+    self.articles.map {|article| article.title}
+  end
+
+  def contributing_authors
+    self.contributors.map {|contributor| contributor.name}
+  end
 end
 
 # # create a magazine

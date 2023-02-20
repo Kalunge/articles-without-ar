@@ -54,6 +54,26 @@ if user_input == "ar"
   Article.all.each {|article| puts "article title: #{article.title}"}
 end
 
+# prompts user to write letter t to get all topics
+puts "Please enter 't' to get all topics:"
+user_input = gets.chomp
+
+if user_input == "t"
+  Magazine.all.each {|magazine| puts "magazine topic: #{magazine.category}"}
+end
+
+# prmpts user to write magazine name to find it by name
+puts "Please enter the name of the magazine you would like to find:"
+user_input = gets.chomp
+
+Magazine.all.each do |magazine|
+  if magazine.name == user_input
+    puts "magazine name: #{magazine.name}"
+  end
+end
+
+
+
 # prompts user to enter x to exit
 puts "Please enter 'x' to exit:"
 user_input = gets.chomp
