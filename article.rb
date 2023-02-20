@@ -1,3 +1,9 @@
+require_relative './author.rb'
+
+magazine_author = Author.new("Jane Doe")
+
+puts "author in article.rb: #{magazine_author.name}"
+
 
 class Article
   # Article#initialize(author, magazine, title)
@@ -40,8 +46,8 @@ class Article
 end
 
 # create an article
-new_article = Article.new("John Doe", "New York Times", "News")
-daily_article = Article.new("Jane Doe", "Daily News", "News")
-article_two = Article.new("Joe Doe", "Weekly News", "News")
-article_three = Article.new("Jill Doe", "Monthly News", "News")
-Article.all.each {|article| puts "article title: #{article.title}, Author: #{article.author}, Magazine: #{article.magazine}"}
+# new_article = Article.new("John Doe", "New York Times", "News")
+# daily_article = Article.new("Jane Doe", "Daily News", "News")
+# article_two = Article.new("Joe Doe", "Weekly News", "News")
+# article_three = Article.new("Jill Doe", "Monthly News", "News")
+# Article.all.each {|article| puts "article title: #{article.title}, Author: #{article.author}, Magazine: #{article.magazine}"}

@@ -19,6 +19,16 @@ class Author
     @name
   end
 
+  # returns the aurhor's article
+  def articles
+    Article.all.select {|article| article.author == self}
+  end
+
+  # returns the author's magazines
+  def magazines
+    self.articles.map {|article| article.magazine}
+  end
+
   # Returns an array of all Author instances
   def self.all
     @@all
