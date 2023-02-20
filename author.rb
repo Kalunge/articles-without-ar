@@ -44,6 +44,10 @@ class Author
   def self.all
     @@all
   end
+
+  def topic_areas
+    self.articles.map {|article| article.magazine.category}
+  end
 end
 
 # # create an author
