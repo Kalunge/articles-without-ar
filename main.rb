@@ -72,6 +72,25 @@ Magazine.all.each do |magazine|
   end
 end
 
+# prompts user to find contributing_authors by magazine name
+puts "Please enter the name of the magazine you would like to find the contributing authors for:"
+user_input = gets.chomp
+
+Magazine.all.each do |magazine|
+  if magazine.name == user_input
+    puts "contributing authors: #{magazine.contributing_authors}"
+  end
+end
+
+# prompts user to find article titles by magazine name
+puts "Please enter the name of the magazine you would like to find the article titles for:"
+user_input = gets.chomp
+
+Magazine.all.each do |magazine|
+  if magazine.name == user_input
+    puts "article titles: #{magazine.article_titles}"
+  end
+end
 
 
 # prompts user to enter x to exit
