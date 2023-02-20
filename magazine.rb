@@ -50,11 +50,11 @@ class Magazine
   end
 end
 
-# create a magazine
-new_magazine = Magazine.new("New York Times", "News")
-daily_magazine = Magazine.new("Daily News", "News")
-weekly_magazine = Magazine.new("Weekly News", "News")
-monthly_magazine = Magazine.new("Monthly News", "News")
-puts new_magazine.name
-puts new_magazine.category
-Magazine.all.each {|magazine| puts "magazine name: #{magazine.name}, magazine category: #{magazine.category}"}
+# # create a magazine
+# new_magazine = Magazine.new("New York Times", "News")
+# daily_magazine = Magazine.new("Daily News", "News")
+# weekly_magazine = Magazine.new("Weekly News", "News")
+# monthly_magazine = Magazine.new("Monthly News", "News")
+# puts new_magazine.name
+# puts new_magazine.category
+# Magazine.all.each {|magazine| puts "magazine name: #{magazine.name}, magazine category: #{magazine.category}"}
