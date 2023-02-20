@@ -17,3 +17,7 @@ class Author
     @name
   end
 end
+
+# create an author
+new_author = Author.new("John Doe")
+puts new_author.name
