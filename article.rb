@@ -86,3 +86,4 @@ puts "article title: #{new_article.title}, Author: #{new_article.author.name}, M
 # article_two = Article.new("Joe Doe", "Weekly News", "News")
 # article_three = Article.new("Jill Doe", "Monthly News", "News")
 # Article.all.each {|article| puts "article title: #{article.title}, Author: #{article.author}, Magazine: #{article.magazine}"}
+
