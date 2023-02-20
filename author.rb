@@ -16,8 +16,15 @@ class Author
   def name
     @name
   end
+
+  # Returns an array of all Author instances
+  def self.all
+    @@all
+  end
 end
 
 # create an author
 new_author = Author.new("John Doe")
 puts new_author.name
+
+puts Author.all

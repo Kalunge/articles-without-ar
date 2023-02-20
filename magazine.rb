@@ -11,9 +11,12 @@
 class Magazine
   # A magazine is initialized with a name as a string and a category as a string
   # The name and category of the magazine can be changed after being initialized.
+
+  @@all = []
   def initialize(name, category)
     @name = name
     @category = category
+    @@all << self
   end
 
   # Returns the name of this magazine
@@ -36,3 +39,12 @@ class Magazine
     @@all
   end
 end
+
+# create a magazine
+new_magazine = Magazine.new("New York Times", "News")
+daily_magazine = Magazine.new("Daily News", "News")
+weekly_magazine = Magazine.new("Weekly News", "News")
+monthly_magazine = Magazine.new("Monthly News", "News")
+puts new_magazine.name
+puts new_magazine.category
+Magazine.all.each {|magazine| puts "magazine name: #{magazine.name}, magazine category: #{magazine.category}"}
